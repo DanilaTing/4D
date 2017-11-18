@@ -1,0 +1,33 @@
+// Place all the styles related to the inputs controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+body {
+
+  .all_cards{
+    // display: flex;
+
+    .input_card {
+      margin-top: 5%;
+      position: absolute;
+      background-color: grey;
+      width: 100px;
+      height: 150px;
+      border: 2px solid;
+      border-color: black;
+      border-radius: 3px;
+      margin-left: 10px;
+
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+
+      font-size: 20px;
+
+      p{
+        font-size: 12px;
+      }
+    }
+  }
+}

@@ -1,0 +1,10 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Body:</strong>
+  <%= @input.body %>
+</p>
+
+<%= link_to 'Edit', edit_input_path(@input) %>
+<%= link_to 'Destroy', @input, method: :delete, data: { confirm: 'Are you sure?' } %>
+<%= link_to 'Back', inputs_path %>
