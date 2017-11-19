@@ -16,6 +16,11 @@
     <%= form.text_area :body, id: :input_body %>
   </div>
 
+  <div class="field">
+    <%= form.label :task_id %>
+    <%= select("input", "task_id", Task.all.collect { |t| [t.id] }, { include_blank: true }) %>
+  </div>
+
   <div class="actions">
     <%= form.submit %>
   </div>

@@ -1,0 +1,10 @@
+<div class="all_cards">
+  <% @inputs.each do |input| %>
+    <div class="input_card">
+      <%= link_to input.body, input %>
+      <p><%= link_to 'Destroy', input, method: :delete %></p>
+    </div>
+  <% end %>
+</div>
+
+<%= link_to 'New Input', new_input_path %>

@@ -5,12 +5,12 @@ class TasksController < ApplicationController
   # GET /tasks.json
   def index
     @tasks = Task.all
-    @inputs = Input.all
   end
 
   # GET /tasks/1
   # GET /tasks/1.json
   def show
+    @inputs = @task.inputs
   end
 
   # GET /tasks/new
@@ -70,6 +70,6 @@ class TasksController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def task_params
-      params.fetch(:task, {})
+      params.require(:task).permit(:title)
     end
 end

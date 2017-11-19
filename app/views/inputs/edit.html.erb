@@ -2,8 +2,6 @@
 
 <%= render 'form', input: @input %>
 
-<%= select("input", "task_id", Task.all.collect { |b| [b.id] }, { include_blank: true }) %>
-
 <%= link_to 'Destroy', @input, method: :delete, data: { confirm: 'Are you sure?' } %>
 <%= link_to 'Show', @input %>
 <%= link_to 'Back', inputs_path %>
