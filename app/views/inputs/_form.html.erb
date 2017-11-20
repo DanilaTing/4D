@@ -18,7 +18,7 @@
 
   <div class="field">
     <%= form.label :task_id %>
-    <%= select("input", "task_id", Task.all.collect { |t| [t.id] }, { include_blank: true }) %>
+    <%= select("input", "task_id", Task.all.collect { |t| [t.title, t.id] }, { include_blank: true }) %>
   </div>
 
   <div class="actions">
